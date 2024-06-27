@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <h1>Payment</h1>
+    <form id="payment-form">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" required>
+        <br><br>
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="text" id="expiration-date" name="expiration-date" required>
+        <br><br>
+        <label for="cvc">CVC:</label>
+        <input type="text" id="cvc" name="cvc" required>
+        <br><br>
+        <button type="submit">Pay</button>
+    </form>
+
+    <script src="payment-script.js"></script>
+</body>
+</html>
